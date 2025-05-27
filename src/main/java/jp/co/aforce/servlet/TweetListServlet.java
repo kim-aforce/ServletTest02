@@ -24,7 +24,6 @@ public class TweetListServlet extends HttpServlet {
 			List<Tweet> tweets = tweetDAO.getAllTweets();
 			request.setAttribute("tweets", tweets);
 			
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

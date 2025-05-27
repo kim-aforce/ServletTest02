@@ -17,9 +17,14 @@
 		<p>
 			<a href="new_tweet.jsp">新規投稿</a>
 		</p>
-		<c:forEach var="tweet" items="${tweets}">
-			<li>${tweet.content}<br> 投稿者：${tweet.author} 投稿時間：${tweet.postedAt}</li>
-		</c:forEach>
+		<ul class = "tweet-list">
+			<div class="tweet-content">
+				<c:forEach var="tweet" items="${tweets}">
+					<li>${tweet.content}<br>
+					 投稿者：${tweet.author} 投稿時間：${tweet.postedAt}</li>
+				</c:forEach>
+		</div>
+		</ul>
 	</div>
 
 </body>

@@ -30,6 +30,16 @@ public class TweetDAO extends DAO {
 		con.close();
 		return tweets;
 	}
+//	public void delete(int id) {
+//		Connection con = null;
+//		PreparedStatement ps = null;
+//		con = ds.getConnection();
+//		String delsql = "DELETE FROM tweets (content, author) VALUES(?, ?)";
+//		ps = con.prepareStatement(delsql);
+//		
+//		ps.setInt(1, id);
+		
+//	}
 
 	//ツイートを新規投稿するメソッド
 	public void addTweet(String content, String author) throws Exception {
